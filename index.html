@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <meta name="theme-color" content="#F383D7" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <meta content="Tenacity Client" property="og:title" />
+    <meta name="twitter:title" content="Tenacity Client" />
+    <meta
+      name="description"
+      content="The best multi-server client with beautiful visuals and amazing bypasses at an affordable price."
+    />
+    <meta
+      property="og:description"
+      content="The best multi-server client with beautiful visuals and amazing bypasses at an affordable price."
+    />
+    <meta
+      name="twitter:description"
+      content="The best multi-server client with beautiful visuals and amazing bypasses at an affordable price."
+    />
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/favicon/favicon-16x16.png"
+    />
+
+    <meta
+      name="msapplication-config"
+      content="assets/favicon/browserconfig.xml"
+    />
+    <meta name="msapplication-TileColor" content="#00ABA9" />
+
+    <link rel="manifest" href="assets/favicon/site.webmanifest" />
+    <link rel="shortcut icon" href="assets/favicon/favicon.ico" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:image:src" content="/assets/img/embed.jpg" />
+    <meta property="og:image" content="/assets/img/embed.jpg" />
+
+    <title>Tenacity Client</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.3/css/bootstrap.min.css"
+      integrity="sha512-GQGU0fMMi238uA+a/bdWJfpUGKUkBdgfFdgBm72SUQ6BeyWjoY/ton0tEjH+OSH9iP4Dfh+7HM0I9f5eR0L/4w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="https://vjs.zencdn.net/7.19.2/video-js.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/4.0.9/fullpage.min.css"
+      integrity="sha512-Go0fX6Al6Eab+N7QbSFHYBpwdcU2rbfONUcbRIS4z+9yzLlj7Xj8ao2BAOPE9Qtxdl+7iq04xzzcF4OTOWoUWg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="assets/font/greycliff/greycliff.css" />
+    <link rel="stylesheet" href="assets/css/landing.css" />
+  <script nonce="541ce505-12fd-4006-9f3c-f25a3534ec8d">(function(w,d){!function(dg,dh,di,dj){dg[di]=dg[di]||{};dg[di].executed=[];dg.zaraz={deferred:[],listeners:[]};dg.zaraz.q=[];dg.zaraz._f=function(dk){return async function(){var dl=Array.prototype.slice.call(arguments);dg.zaraz.q.push({m:dk,a:dl})}};for(const dm of["track","set","debug"])dg.zaraz[dm]=dg.zaraz._f(dm);dg.zaraz.init=()=>{var dn=dh.getElementsByTagName(dj)[0],dp=dh.createElement(dj),dq=dh.getElementsByTagName("title")[0];dq&&(dg[di].t=dh.getElementsByTagName("title")[0].text);dg[di].x=Math.random();dg[di].w=dg.screen.width;dg[di].h=dg.screen.height;dg[di].j=dg.innerHeight;dg[di].e=dg.innerWidth;dg[di].l=dg.location.href;dg[di].r=dh.referrer;dg[di].k=dg.screen.colorDepth;dg[di].n=dh.characterSet;dg[di].o=(new Date).getTimezoneOffset();if(dg.dataLayer)for(const du of Object.entries(Object.entries(dataLayer).reduce(((dv,dw)=>({...dv[1],...dw[1]})),{})))zaraz.set(du[0],du[1],{scope:"page"});dg[di].q=[];for(;dg.zaraz.q.length;){const dx=dg.zaraz.q.shift();dg[di].q.push(dx)}dp.defer=!0;for(const dy of[localStorage,sessionStorage])Object.keys(dy||{}).filter((dA=>dA.startsWith("_zaraz_"))).forEach((dz=>{try{dg[di]["z_"+dz.slice(7)]=JSON.parse(dy.getItem(dz))}catch{dg[di]["z_"+dz.slice(7)]=dy.getItem(dz)}}));dp.referrerPolicy="origin";dp.src="/cdn-cgi/zaraz/s.js?z="+btoa(encodeURIComponent(JSON.stringify(dg[di])));dn.parentNode.insertBefore(dp,dn)};["complete","interactive"].includes(dh.readyState)?zaraz.init():dg.addEventListener("DOMContentLoaded",zaraz.init)}(w,d,"zarazData","script");})(window,document);</script></head>
+
+  <body>
+    <div id="particles"></div>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top blur pad">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <h2 class="fw-600 mb-0">Tenacity</h2>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarText"
+          aria-controls="navbarText"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+          <div class="me-auto mb-lg-0"></div>
+          <ul class="navbar-nav">
+            <li class="nav-item me-1">
+              <a class="nav-link" href="discord">Discord</a>
+            </li>
+            <li class="nav-item me-2">
+              <a class="nav-link" href="https://tenacity-docs.cheatin.gg"
+                >Scripting</a
+              >
+            </li>
+          </ul>
+          <button
+            type="button"
+            class="btn btn-primary wr-100"
+            data-bs-toggle="modal"
+            data-bs-target="#purchase"
+          >
+            Purchase
+          </button>
+        </div>
+      </div>
+    </nav>
+    <div id="fullpage">
+      <div class="section" id="section-0">
+        <div class="v-align mx-2">
+          <div class="d-inline-flex">
+            <h1 class="text-shadow fw-600 fs-5r">Tenacity</h1>
+            <h4 class="text-shadow">5.6</h4>
+          </div>
+          <h4 class="text-shadow subtext">
+            The best multi-server client with beautiful visuals and amazing
+            bypasses at an affordable price.
+          </h4>
+          <a
+            class="d-flex justify-content-center"
+            href="https://discord.gg/pCKFgY3YRC"
+            style="
+              align-items: center;
+              margin-top: 0.5rem;
+              color: white;
+              text-decoration: none;
+            "
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              style="margin-right: 0.5rem"
+            >
+              <circle cx="12" cy="12" r="10" />
+              <line x1="12" x2="12" y1="8" y2="12" />
+              <line x1="12" x2="12.01" y1="16" y2="16" />
+            </svg>
+            <span>Migration to discord has started, dm me on discord @ thoq.jar</span>
+          </a>
+          <div class="mt-3">
+            <button
+              type="button"
+              class="btn btn-primary me-1"
+              data-bs-toggle="modal"
+              data-bs-target="#purchase"
+            >
+              Purchase
+            </button>
+            <a class="btn btn-secondary ms-1" href="#trailer">Learn more</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="section" id="section-1">
+        <div class="v-align mx-2">
+          <div class="row">
+            <div class="col-12 col-md-6 m-auto">
+              <video
+                class="video-js vjs-default-skin vjs-big-play-centered vjs-fluid"
+                id="video"
+                preload="auto"
+                controls
+              >
+                <source src="assets/mp4/trailer.mp4" type="video/mp4" />
+                <p class="vjs-no-js">
+                  To view this video please enable JavaScript, and consider
+                  upgrading to a web browser that
+                  <a
+                    href="https://videojs.com/html5-video-support/"
+                    target="_blank"
+                    >supports HTML5 video</a
+                  >
+                </p>
+              </video>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section" id="section-2">
+        <div class="v-align mx-2">
+          <h1 class="slide-text">
+            Customize <strong>Tenacity</strong> to your liking with our
+            <strong>3</strong> ClickGUIs and <strong>20+</strong> pre-made
+            themes
+          </h1>
+          <img class="mt-3" src="assets/img/gui.png" width="75%" />
+        </div>
+      </div>
+
+
+      <div class="section" id="section-4">
+        <div class="v-align mx-2 d-flex justify-content-center">
+          <div class="col-9 col-lg-4 faq">
+            <h1 class="fw-600 text-shadow fs-4r">FAQ</h1>
+            <h6 class="text-shadow text-uppercase spaced">
+              Frequently asked questions
+            </h6>
+            <hr class="text-shadow" />
+            <div class="accordion accordion-flush" id="acc-faq"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="section fp-auto-height text-shadow blur" id="section-5">
+        <footer class="mt-auto">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-3">
+                <div class="footer-logo">
+                  <h3 class="fw-600">Tenacity</h3>
+                  <p>
+                    The best multi-server client with beautiful visuals and
+                    amazing bypasses at an affordable price.
+                  </p>
+                </div>
+              </div>
+              <div class="col-lg-4"></div>
+              <div class="col-lg-5">
+                <div class="row">
+                  <div class="col-md-6"></div>
+                  <div class="col-md-6">
+                    <div class="footer-links mb-4 mb-md-0">
+                      <h6>EXPLORE</h6>
+                      <ul>
+                        <li>
+                          <a href="https://discord.gg/g3tcDAmVhC"
+                            >Terms of Service</a
+                          >
+                        </li>
+                        <li><a href="https://discord.gg/pCKFgY3YRC"></a>Discord</li>
+                        <li>
+                          <a href="https://tenacity-docs.cheatin.gg"
+                            >Scripting</a
+                          >
+                        </li>
+                        <li><a href="discord">Discord</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-12">
+                <div class="footer-text">
+                  <span class="mb-0"
+                    >site made by <strong>senoe <3</strong><br />client developed
+                    by <strong>Thoq</span>strong>
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </div>
+
+    <div
+      class="modal fade"
+      id="purchase"
+      tabindex="-1"
+      aria-labelledby="purchaseModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header text-center ps-0">
+            <h3
+              class="modal-title w-100 text-center position-absolute text-gradient fw-600"
+            >
+              Purchase Tenacity
+            </h3>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <div class="container">
+              <div class="row g-2 text-center">
+                <div class="col-md-12">
+                  <a
+                    class="btn btn-primary btn-store w-100 d-inline-flex p-2"
+                    target="_blank"
+                    href="https://discord.gg/pCKFgY3YRC"
+                  >
+                    <img
+                      class="img-store"
+                      src="https://i.imgur.com/SsfUvvQ.png"
+                    />
+                    <div class="lh-sm m-auto">
+                      <span class="fw-600 mb-0">Discord</span>
+                      <span>&bull;</span>
+                      <span>Paypal & Crypto</span>
+                    </div>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.3/js/bootstrap.min.js"
+      integrity="sha512-OvBgP9A2JBgiRad/mM36mkzXSXaJE9BEIENnVEmeZdITvwT09xnxLtT4twkCa8m/loMbPHsvPl0T8lRGVBwjlQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script src="assets/lib/fullpage2/fullpage.min.js"></script>
+
+    <script
+      src="assets\js\tsparticles.engine.min.js"
+      integrity="sha512-1cO2n7ZujKWoHyGr0uQyme3PbdOWvHa/61nw+RnyBOV2qxlT913bopMbzmI/6M9qEhbkTBhSW374xa8p6HNxWw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="assets\js\tsparticles.bundle.min.js"
+      integrity="sha512-klu0y6k0isDbuEW4o6MrEv7Ge1pPfP0ejiX5aW8RHk3k2oV97cL9/oOwKWmszHpQh/0+Kgg69CU2nMy2sIeclQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="/assets/js/jquery-particles.js"></script>
+    <script src="https://vjs.zencdn.net/7.19.2/video.min.js"></script>
+    <script src="assets/js/landing.js"></script>
+  </body>
+</html>
